@@ -9,15 +9,13 @@ try {
             ->setSubject('News Letter September')
             ->setFrom($from)
       
-            ->addTo('contact@sagishutrit.com','shasha haganuv1')
-            ->addTo('sags2012@gmail.com','shasha haganuv2')
-            ->addTo('shutrit@hotmail.com','count shugulla city');
+            ->addTo('person@gemmente.nl','title 1st message')
+            ->addTo('personb@gmail.com','title 2nd message')
+            ->addTo('personb2b@domain.com','title 3rd message');
             
             // embeding using the swift mailer library 
-            
-            
             $image = $message->embed(Swift_Image::fromPath('images/Diana_cracked.jpg'));
-            $logo =  $message->embed(Swift_Image::fromPath('images/shutritartandesign.jpg'));
+            $logo =  $message->embed(Swift_Image::fromPath('images/logo.jpg'));
            
             $html = <<<EOT
 <!DOCTYPE html>
